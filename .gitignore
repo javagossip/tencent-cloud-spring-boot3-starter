@@ -25,3 +25,4 @@ replay_pid*
 /.idea/tencent-cloud-spring-boot3-starter.iml
 /.idea/misc.xml
 /.idea/
+target/
