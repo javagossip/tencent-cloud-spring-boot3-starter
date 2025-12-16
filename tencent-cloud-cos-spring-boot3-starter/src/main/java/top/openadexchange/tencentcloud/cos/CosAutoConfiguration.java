@@ -1,5 +1,6 @@
 package top.openadexchange.tencentcloud.cos;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -21,6 +22,7 @@ import com.qcloud.cos.region.Region;
 public class CosAutoConfiguration {
 
     @Bean
+    @ConditionalOnMissingBean
     public COSClient cosClient(CosConfigurationProperties properties) {
         String secretId =
                 properties.getSecretId();//用户的 SecretId，建议使用子账号密钥，授权遵循最小权限指引，降低使用风险。子账号密钥获取可参见 https://cloud.tencent.com/document/product/598/37140
