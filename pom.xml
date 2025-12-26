@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>top.openadexchange</groupId>
     <artifactId>tencent-cloud-spring-boot3-starter</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>tencent-cloud-spring-boot3-starter</name>
     <description>The spring-boot starter for tencent cloud sdks</description>
     <url>https://github.com/javagossip/tencent-cloud-spring-boot3-starter</url>
